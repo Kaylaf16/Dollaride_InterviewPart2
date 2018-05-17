@@ -3,8 +3,8 @@ List = [1,2,3,5,10,9,8,9,10,11,7]
 
 def findConsecutiveRuns(List):
    runs =[]
-   order = 0 # keeping track of Ascending or Descending 
-   for index,value in enumerate(List): # utilizing indice, and value
+   order = 0 # keeping track of Ascending or Descending
+   for index in range(len(List)):
         if(index < len(List)-2):
            current,next,nextnext = index,index+1,index+2
            if(List[current]+1 == List[next]):
